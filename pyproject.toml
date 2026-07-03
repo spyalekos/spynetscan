@@ -1,0 +1,32 @@
+[project]
+name = "SpyNetScan"
+version = "1.1.4"
+description = "A Python/Flet local network IP and Port scanner"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "SpyAlekos", email = "spyalekos@gmail.com" }
+]
+dependencies = [
+    "flet>=0.85.3",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.21.0",
+    "flet-desktop>=0.85.3",
+]
+
+[tool.flet]
+org = "gr.spyalekos"
+product = "SpyNetScan"
+company = "spyalekos"
+copyright = "Copyright (C) 2026 by Spyalekos"
+
+[tool.flet.android.permission]
+"android.permission.INTERNET" = true
+"android.permission.ACCESS_NETWORK_STATE" = true
+"android.permission.ACCESS_WIFI_STATE" = true
+
+[tool.flet.app]
+path = "."

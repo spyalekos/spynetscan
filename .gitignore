@@ -1,0 +1,22 @@
+# Python cache & virtualenvs
+__pycache__/
+*.pyc
+.venv/
+venv/
+ENV/
+
+# PyInstaller Build Artifacts (spec file is tracked)
+build/
+dist/
+
+# System / OS files
+.DS_Store
+Thumbs.db
+
+# Release Archives
+*.tar.gz
+*.zip
+*.apk
+
+# Android Build cache
+.android_cache/
